@@ -5,3 +5,9 @@ This is a basic web application intended for real time chatting. In this, channn
 Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more.
 
 It does this by taking the core of Django and layering a fully asynchronous layer underneath, running Django itself in a synchronous mode but handling connections and sockets asynchronously, and giving you the choice to write in either style.
+
+Major Components here are - 
+* Daphne, the HTTP and Websocket termination server
+* Channels, the Django integration layer
+* Asgiref, the base ASGI library
+* Channels_redis, the Redis channel layer backend 
